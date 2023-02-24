@@ -130,7 +130,7 @@ const Home = () => {
           </Description>
           <Socials />
           <Buttons>
-            <Button href="/" className="btn text-cs">
+            <Button href="../assets/CV-2023-ESP-LeandroArbelo.pdf" download={"CV-Leandro-Arbelo.pdf"} className="btn text-cs">
               Descargar CV
             </Button>
             <Button href="#skills" className="link text-cs">
