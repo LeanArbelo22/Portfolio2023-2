@@ -1,0 +1,47 @@
+{
+  "name": "modern-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "author": "Leandro Arbelo",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:scss": "stylelint \"./src/**/*.scss\"",
+    "lint:jsx": "stylelint \"./src/**/*.jsx\"",
+    "lint:styles": "stylelint \"./src/**/*.{js,jsx,scss,css}\""
+  },
+  "dependencies": {
+    "axios": "^1.3.4",
+    "framer-motion": "^9.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "sass": "^1.58.3",
+    "styled-components": "^5.3.6",
+    "sweetalert2": "^11.7.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.4",
+    "stylelint": "^15.2.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "vite": "^4.1.0"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
+  }
+}

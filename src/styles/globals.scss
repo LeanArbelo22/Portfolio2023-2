@@ -1,0 +1,189 @@
+/* ---------------------------------- *\
+  * GOOGLE FONTS
+\* ---------------------------------- */
+@import 'https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Jost:wght@400;500;600;700&display=swap';
+
+// * RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: var(--font1);
+  font-size: var(--normal);
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg);
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title);
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Light theme */
+
+
+/* Reusable */
+.container {
+  max-width: 1300px;
+  padding-inline: .75rem;
+  margin-inline: auto;
+}
+
+.text-cs {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+// ? solo en Home ?
+.btn,
+.link {
+  color: var(--title);
+  font-size: var(--smaller);
+  font-weight: 700;
+  height: 3.5rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+// ...
+.btn {
+  border: 2px solid var(--border);
+  padding-inline: 2.5rem;
+  box-shadow: var(--shadow);
+  z-index: 1;
+  border-radius: 8px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: var(--primary);
+    transform: scale(.3);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all .5s var(--timing);
+    z-index: -1;
+  }
+
+  &:hover::before {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -140%;
+  width: 45px;
+  height: 2px;
+  background-color: var(--border);
+}
+
+.shape {
+  position: absolute;
+  filter: invert(1);
+  opacity: .6;
+}
+
+// Skills
+.section {
+  padding-bottom: 220px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+// ...
+.card {
+  background-color: var(--container);
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+}
+
+.links {
+  display: inline-flex;
+  align-items: center;
+  color: var(--title);
+  font-weight: 700;
+  position: relative;
+
+  .icon {
+    color: var(--primary);
+    margin-left: .7rem;
+    transition: all .6s var(--timing);
+    position: relative;
+    top: 2px;
+  }
+
+  &:hover .icon {
+    transform: translateX(40%);
+  }
+}
+
+// swal
+.swal2-title {
+  font-family: var(--font1) !important;
+}
+
+// scroll link
+.scroller {
+  color: var(--title);
+  transition: all 0.3s var(--timing);
+
+  &:hover {
+    color: var(--primary);
+  }
+}
