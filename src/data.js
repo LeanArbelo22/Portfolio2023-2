@@ -96,7 +96,7 @@ export const projects = [
     title: 'Smart Effortless Filter',
     description:
       'Aplicación de escritorio para empresas, se encarga de gestionar ventas y conversaciones de WhatsApp de vendedores, además de un bot que automatiza las respuestas y filtra clientes. Por cuestiones legales no puedo mostrar el codigo.',
-    href: '#portfolio'
+    href: ''
   },
   {
     id: 4,
