@@ -116,7 +116,7 @@ const Description = styled.p`
   })}
 
   ${smallMobile({
-    fontSize: 'var(--small)',
+    fontSize: 'var(--small)'
   })}
 `;
 
@@ -147,10 +147,8 @@ const Button = styled.a`
 
   ${smallMobile({
     fontSize: '0.7rem',
-    padding: '0 .5rem',
-  })}
-  
-  /* 
+    padding: '0 .5rem'
+  })}/* 
   .btn, .link {
     color: var(--title);
     font-size: var(--smaller);
@@ -207,10 +205,10 @@ const Home = () => {
           </Job>
           <HomeProfile />
           <Description>
-            Un apasionado programador con preferencia y mayor experiencia en
-            Desarrollo Frontend. Aunque no poseo mucha experiencia en proyectos
-            reales me gusta aspirar a poder trabajar en proyectos desafiantes en
-            los que tenga la oportunidad de aprender y crecer profesionalemente.
+            Con preferencia y mayor experiencia en desarrollo frontend. No poseo
+            mucha experiencia en proyectos reales pero me gusta aspirar a poder
+            trabajar en proyectos desafiantes. Con muchas ganas de seguir
+            aprendiendo.
           </Description>
           <Socials />
           <Buttons>
