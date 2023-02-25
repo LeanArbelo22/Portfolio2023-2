@@ -2,12 +2,21 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import { mobile } from '../styles/responsive';
 
-const Form = styled.form``;
+const Form = styled.form`
+  ${mobile({
+    width: '85%'
+  })}
+`;
 
 const FormGroup = styled.div`
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.875rem;
+
+  ${mobile({
+    gridTemplateColumns: 'repeat(1, 1fr)'
+  })}
 `;
 
 const Inputs = styled.div`

@@ -6,15 +6,24 @@ import {
   FaRegMap
 } from 'react-icons/fa';
 import ContactForm from '../components/ContactForm';
+import { mobile, tablet } from '../styles/responsive';
 
 const Container = styled.section`
   background-image: var(--gradient1);
   padding-top: 7rem;
+
+  ${mobile({
+    paddingBottom: '2rem'
+  })}
 `;
 
 const Title = styled.h2`
   text-align: center;
   font-size: var(--h1);
+
+  ${mobile({
+    fontSize: 'var(--h2)'
+  })}
 `;
 
 const Subtitle = styled.p`
@@ -36,12 +45,52 @@ const Subtitle = styled.p`
 
 const Content = styled.div`
   grid-template-columns: 5fr 7fr;
+
+  ${tablet({
+    gridTemplateColumns: '1fr',
+    placeItems: 'center',
+    rowGap: '3rem'
+  })}
+
+  &.grid {
+    ${mobile({
+      width: '100%',
+      display: 'flex',
+      flexDirection: 'column'
+    })}
+  }
+`;
+
+const Wrapper = styled.div`
+  ${tablet({
+    width: '100%',
+    order: '2',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gridTemplateRows: 'repeat(2, 1fr)'
+  })}
+
+  ${mobile({
+    gridTemplateColumns: 'repeat(1, 1fr)',
+    placeItems: 'center',
+    position: 'relative',
+    marginTop: '1rem'
+  })}
 `;
 
 const Card = styled.div`
   padding-left: 130px;
   margin-bottom: 2.5rem;
   position: relative;
+
+  ${tablet({
+    paddingLeft: '70px'
+  })}
+
+  ${mobile({
+    width: '100%',
+    margin: '3rem 0'
+  })}
 `;
 
 const Icon = styled.span`
@@ -67,7 +116,22 @@ const Icon = styled.span`
     left: 100%;
     top: 50%;
     margin-top: -1px;
+
+    ${tablet({
+      display: 'none'
+    })}
   }
+
+  ${tablet({
+    width: '2.8rem',
+    height: '2.8rem'
+  })}
+
+  ${mobile({
+    width: '2rem',
+    height: '2rem',
+    marginLeft: '1rem'
+  })}
 `;
 
 const CardTitle = styled.h3`
@@ -76,15 +140,22 @@ const CardTitle = styled.h3`
   padding-block: 6px;
   color: var(--title);
   font-weight: 400;
+
+  ${mobile({
+    display: 'none'
+  })}
 `;
 
 const CardData = styled.p``;
 
-const Wrapper = styled.div``;
-
 const Link = styled.a`
   color: var(--primary);
   text-decoration: underline;
+  
+  ${mobile({
+    position: 'absolute',
+    fontWeight: '600'
+  })}
 `;
 
 const Contact = () => {

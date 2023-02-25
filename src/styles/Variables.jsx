@@ -81,10 +81,16 @@ const GlobalStyle = createGlobalStyle`
     opacity: 0.85;
   }
 }
+
+@media only screen and (min-width: 1800px) {
+  :root {
+    font-size: 18px;
+  }
+}
 `;
 
-function Variables () {
-  return <GlobalStyle />
+function Variables() {
+  return <GlobalStyle />;
 }
 
 export default Variables;

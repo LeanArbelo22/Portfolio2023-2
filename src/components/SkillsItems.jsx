@@ -1,12 +1,46 @@
 import styled from 'styled-components';
 import { skills } from '../data';
+import { large, mobile, smallMobile, tablet } from '../styles/responsive';
 
 const SkillsContent = styled.div`
   grid-template-columns: repeat(3, 1fr);
   row-gap: 4.375rem;
+
+  ${tablet({
+    rowGap: '3rem',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gridTemplateRows: 'repeat(4, 1fr)',
+    placeItems: 'center'
+  })}
+
+  ${mobile({
+    rowGap: '1rem',
+    gridTemplateColumns: 'repeat(1, 1fr)',
+    gridTemplateRows: 'repeat(9, 1fr)',
+    placeItems: 'center'
+  })}
+
+  & :last-child {
+    ${mobile({
+      borderBottom: 'none'
+    })}
+  }
 `;
 
-const Item = styled.div``;
+const Item = styled.div`
+  ${large({
+    maxWidth: '280px'
+  })}
+
+  ${mobile({
+    width: '375px',
+    borderBottom: '2px solid var(--border)'
+  })}
+
+  ${smallMobile({
+    maxWidth: '90vw'
+  })}
+`;
 
 const ItemTitles = styled.div`
   display: flex;
@@ -18,6 +52,10 @@ const ItemTitles = styled.div`
 
 const ItemName = styled.h3`
   font-size: var(--largest);
+  
+  ${large({
+    fontSize: 'var(--large)'
+  })}
 `;
 
 const ItemNumber = styled.span`
@@ -27,17 +65,33 @@ const ItemNumber = styled.span`
   & span {
     color: var(--primary);
   }
+
+  ${large({
+    fontSize: 'var(--small)'
+  })}
 `;
 
 const ItemDescription = styled.p`
   margin-bottom: 1.875rem;
   padding-inline: 1.825rem;
   min-height: 3.5rem;
+
+  ${large({
+    fontSize: 'var(--small)'
+  })}
+
+  ${mobile({
+    display: 'none'
+  })}
 `;
 
 const ItemBar = styled.div`
   background-color: #ffffff33;
   height: 2px;
+
+  ${mobile({
+    display: 'none'
+  })}
 `;
 
 const PercentageBar = styled.span`

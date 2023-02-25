@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import ResumeCard from '../components/ResumeCard';
 import { curriculum } from '../data';
+import { large, mobile } from '../styles/responsive';
 
 const Container = styled.section`
   background-image: var(--gradient2);
@@ -11,6 +12,10 @@ const Container = styled.section`
 const Title = styled.h2`
   text-align: center;
   font-size: var(--h1);
+
+  ${mobile({
+    fontSize: 'var(--h2)'
+  })}
 `;
 
 const Subtitle = styled.p`
@@ -32,9 +37,22 @@ const Subtitle = styled.p`
 
 const ResumeContent = styled.div`
   grid-template-columns: repeat(2, 1fr);
+
+  ${mobile({
+    gridTemplateColumns: 'repeat(1, 1fr)',
+    gridTemplateRows: 'repeat(2, 1fr)',
+  })}
 `;
 
-const Group = styled.div``;
+const Group = styled.div`
+  ${large({
+    maxWidth: '95%'
+  })}
+
+  ${mobile({
+    marginBottom: '4rem'
+  })}
+`;
 
 const Heading = styled.h3`
   text-align: center;
@@ -43,12 +61,11 @@ const Heading = styled.h3`
   border-bottom: 2px solid var(--border);
 `;
 
-const Items = styled.div`
-`;
+const Items = styled.div``;
 
 const Resume = () => {
   return (
-    <Container className="section" id='resume'>
+    <Container className="section" id="resume">
       <Title className="text-cs">Curriculum</Title>
       <Subtitle>
         mi <span>trayectoria</span>

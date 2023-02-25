@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import profileImage from '../assets/profile-img.png';
 import shapeOne from '../assets/shape-1.png';
 import shapeTwo from '../assets/shape-2.png';
+import { large, tablet } from '../styles/responsive';
 
 const ImageWrapper = styled.div`
   position: absolute;
@@ -10,6 +11,11 @@ const ImageWrapper = styled.div`
   transform: translateY(-9%);
   width: 100%;
   max-width: 680px;
+
+  ${large({
+    maxWidth: '450px',
+    top: "4rem"
+  })}
 `;
 
 const Banner = styled.div`
@@ -18,6 +24,10 @@ const Banner = styled.div`
   border-radius: 50%;
   position: relative;
   z-index: 1;
+
+  ${tablet({
+    display: 'none'
+  })}
 `;
 
 const Image = styled.img`
@@ -26,6 +36,10 @@ const Image = styled.img`
   height: 800px;
   border-radius: 500px;
   object-fit: cover;
+
+  ${large({
+    height: '550px'
+  })}
 `;
 
 const Data = styled.p`
@@ -42,6 +56,10 @@ const Data = styled.p`
   border-radius: 8px;
   display: flex;
   align-items: center;
+
+  ${tablet({
+    display: 'none'
+  })}
 `;
 
 const DataText = styled.span`
@@ -74,11 +92,20 @@ const DataText = styled.span`
 `;
 
 const Shape = styled.img`
+  ${tablet({
+    opacity: "0.1!important"
+  })}
+
   &.one {
     width: 226px;
     height: 226px;
     top: -10%;
     right: 6%;
+
+    ${tablet({
+      right: '15%',
+      top: '200px'
+    })}
   }
 
   &.two {
@@ -86,6 +113,11 @@ const Shape = styled.img`
     height: 141px;
     bottom: 10%;
     left: -12%;
+
+    ${tablet({
+      left: '-20%',
+      top: '-200px'
+    })}
   }
 
   &.three {

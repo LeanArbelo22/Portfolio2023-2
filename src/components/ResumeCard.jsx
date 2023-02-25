@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import { large, mobile, tablet } from '../styles/responsive';
 
 const Container = styled.div`
   border-bottom: 2px solid var(--border);
@@ -45,6 +46,14 @@ const Content = styled.div`
 
   &.show {
     max-height: 510px;
+
+    ${large({
+      maxHeight: 'fit-content'
+    })}
+
+    ${tablet({
+      paddingInline: '1.8rem'
+    })}
   }
 `;
 
@@ -52,6 +61,10 @@ const DateTitle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${large({
+    flexWrap: 'wrap'
+  })}
 `;
 
 const Subtitle = styled.h3`
@@ -62,11 +75,23 @@ const Subtitle = styled.h3`
 
 const Date = styled.span`
   user-select: none;
+
+  ${large({
+    margin: '1rem 0'
+  })}
 `;
 
 const Description = styled.p`
   margin-block: 1.25rem 1.875rem;
   user-select: none;
+
+  ${large({
+    fontSize: 'var(--small)'
+  })}
+
+  ${mobile({
+    display: 'none'
+  })}
 `;
 
 const ResumeCard = ({ item: { title, subtitle, description, date } }) => {

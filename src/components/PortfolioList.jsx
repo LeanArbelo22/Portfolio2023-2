@@ -1,11 +1,18 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import { mobile, smallMobile } from '../styles/responsive';
 
 const List = styled.div`
   display: flex;
   justify-content: center;
   column-gap: 2.5rem;
   margin-bottom: 60px;
+
+  ${mobile({
+    columnGap: '4rem',
+    rowGap: '2rem',
+    flexWrap: 'wrap'
+  })}
 `;
 
 const Button = styled.button`
@@ -34,6 +41,10 @@ const Button = styled.button`
   &.active {
     color: var(--primary);
   }
+
+  ${smallMobile({
+      fontSize: '.7rem'
+  })}
 `;
 
 const PortfolioList = ({ list, filter }) => {

@@ -1,20 +1,33 @@
 import styled from 'styled-components';
 import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
+import { mobile, smallMobile } from '../styles/responsive';
 
 const Container = styled.div`
   display: flex;
   column-gap: 1.25rem;
   margin-bottom: 1.875rem;
+
+  
 `;
 
 const Link = styled.a`
   color: var(--title);
   font-size: var(--h4);
-  transition: all .7s var(--timing);
+  transition: all 0.7s var(--timing);
 
   &:hover {
     color: var(--primary);
   }
+
+  ${mobile({
+    fontSize: 'var(--h5)',
+    position: 'relative',
+    top: '1.2rem'
+  })}
+
+  ${smallMobile({
+    top: '.5rem'
+  })}
 `;
 
 const Socials = () => {

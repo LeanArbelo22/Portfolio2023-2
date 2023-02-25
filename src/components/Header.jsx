@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import { links } from '../data';
 import { BsSun, BsMoon } from 'react-icons/bs';
 import { useEffect, useState } from 'react';
+import { smallMobile } from '../styles/responsive';
 
 const headerAnimate = keyframes`
   0% {
@@ -83,6 +84,10 @@ const Buttons = styled.div`
   display: flex;
   align-items: center;
   column-gap: 40px;
+
+  ${smallMobile({
+    columnGap: '1.5rem'
+  })}
 `;
 
 const ThemeToggler = styled.div`

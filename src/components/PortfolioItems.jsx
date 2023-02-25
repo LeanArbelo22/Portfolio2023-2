@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import shapeTwo from '../assets/shape-2.png';
 import { FaArrowRight } from 'react-icons/fa';
+import { mobile, smallMobile } from '../styles/responsive';
 
 const Image = styled.img`
   height: 240px;
@@ -36,11 +37,19 @@ const Category = styled.span`
 
 const Title = styled.h3`
   font-size: var(--h4);
+
+  ${mobile({
+    marginBottom: '2rem'
+  })}
 `;
 
 const Description = styled.p`
   min-height: 150px;
   margin-top: 1.6rem;
+
+  ${mobile({
+    display: 'none'
+  })}
 `;
 
 const Link = styled.a``;

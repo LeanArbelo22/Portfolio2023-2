@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaWhatsapp
 } from 'react-icons/fa';
+import { tablet } from '../styles/responsive';
 
 const Container = styled.footer`
   border-top: 1px solid #00000005;
@@ -15,6 +16,13 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${tablet({
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    columnGap: '2rem',
+    rowGap: '1rem'
+  })}
 `;
 
 const Socials = styled.div`

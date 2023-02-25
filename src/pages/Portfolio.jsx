@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import PortfolioItems from '../components/PortfolioItems';
 import PortfolioList from '../components/PortfolioList';
 import { projects } from '../data';
+import { large, mobile } from '../styles/responsive';
 
 const Wrapper = styled.div`
   padding-top: 6rem;
@@ -18,6 +19,10 @@ const Container = styled.section`
 const Title = styled.h2`
   text-align: center;
   font-size: var(--h1);
+
+  ${mobile({
+    fontSize: 'var(--h2)'
+  })}
 `;
 
 const Subtitle = styled.p`
@@ -40,6 +45,16 @@ const Subtitle = styled.p`
 const ItemsContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+
+  ${large({
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    rowTemplateColumns: 'repeat(6, 1fr)'
+  })}
+
+  ${mobile({
+    gridTemplateColumns: 'repeat(1, 1fr)',
+    rowTemplateColumns: 'auto'
+  })}
 `;
 
 const categories = [
