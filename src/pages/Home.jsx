@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import HomeProfile from '../components/HomeProfile';
 import Socials from '../components/HomeSocials';
 import { large, mobile, smallMobile, tablet } from '../styles/responsive';
+import curriculum from '../assets/CV-2023-ESP-LeandroArbelo.pdf';
 
 const Section = styled.section`
   background-image: var(--gradient1);
@@ -215,7 +216,7 @@ const Home = () => {
           <Socials />
           <Buttons>
             <Button
-              href="../assets/CV-2023-ESP-LeandroArbelo.pdf"
+              href={curriculum}
               download
               className="btn text-cs"
             >
