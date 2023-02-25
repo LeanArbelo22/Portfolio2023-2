@@ -216,7 +216,7 @@ const Home = () => {
           <Buttons>
             <Button
               href="../assets/CV-2023-ESP-LeandroArbelo.pdf"
-              download={'CV-Leandro-Arbelo.pdf'}
+              download
               className="btn text-cs"
             >
               Descargar CV
