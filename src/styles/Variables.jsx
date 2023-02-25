@@ -80,6 +80,10 @@ const GlobalStyle = createGlobalStyle`
     filter: invert(0);
     opacity: 0.85;
   }
+
+  & .card-item {
+    box-shadow: 2px 3px #ddd;
+  }
 }
 
 @media only screen and (min-width: 1800px) {

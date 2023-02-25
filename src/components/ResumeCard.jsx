@@ -40,16 +40,26 @@ const Icon = styled.span`
 
 const Content = styled.div`
   padding-inline: 1.875rem 3.1rem;
-  max-height: 0;
+  height: fit-content;
   overflow: hidden;
-  transition: all 0.4s var(--timing);
+
+  & p,
+  h3,
+  span {
+    display: none;
+  }
 
   &.show {
-    max-height: 510px;
+    transition: all 0.4s var(--timing);
+    & p,
+    h3,
+    span {
+      display: block;
+    }
 
     ${large({
       maxHeight: 'fit-content'
-    })}
+    })} // !
 
     ${tablet({
       paddingInline: '1.8rem'

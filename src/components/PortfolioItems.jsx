@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import shapeTwo from '../assets/shape-2.png';
 import { FaArrowRight } from 'react-icons/fa';
-import { mobile, smallMobile } from '../styles/responsive';
+import { mobile } from '../styles/responsive';
 
 const Image = styled.img`
   height: 240px;
@@ -74,7 +74,7 @@ const PortfolioItems = ({ projects }) => {
             exit={{ opacity: 0.8, scale: 0.6 }}
             transition={{ duration: 0.3 }}
             key={id}
-            className="card"
+            className="card card-item"
           >
             <ImageWrapper>
               <Image src={img} alt="item" />
@@ -82,7 +82,7 @@ const PortfolioItems = ({ projects }) => {
             <Category className="text-cs">{category}</Category>
             <Title>{title}</Title>
             <Description>{description}</Description>
-            <Link href={href} className="links" target="_blank">
+            <Link href={href} className="links" target={href !== '' && '_blank'}>
               Ver más
               <FaArrowRight className="icon" />
             </Link>

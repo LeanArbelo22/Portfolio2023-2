@@ -61,20 +61,21 @@ const ItemName = styled.h3`
 const ItemNumber = styled.span`
   color: var(--title);
   font-weight: 700;
+  display: none;
 
   & span {
     color: var(--primary);
   }
 
-  ${large({
-    fontSize: 'var(--small)'
+  ${mobile({
+    display: 'block'
   })}
 `;
 
 const ItemDescription = styled.p`
   margin-bottom: 1.875rem;
   padding-inline: 1.825rem;
-  min-height: 3.5rem;
+  min-height: 1.5rem; // 3.5rem
 
   ${large({
     fontSize: 'var(--small)'
@@ -126,7 +127,7 @@ const SkillsItems = () => {
                 {percentage} <span>%</span>
               </ItemNumber>
             </ItemTitles>
-            <ItemDescription>{description}</ItemDescription>
+            <ItemDescription>{/* {description} */}</ItemDescription>
             <ItemBar className='bar'>
               <PercentageBar className='percent' width={percentage}>
                 <Dot></Dot>

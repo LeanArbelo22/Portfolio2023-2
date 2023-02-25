@@ -201,14 +201,16 @@ const Home = () => {
             <Span>LEA</Span> ARBELO
           </Title>
           <Job>
-            <Span className="text-cs">Soy</Span> <b>Desarrollador Full Stack</b>
+            <Span className="text-cs">{/* soy */}</Span>
+            <b>Desarrollador Full Stack</b>
           </Job>
           <HomeProfile />
           <Description>
-            Con preferencia y mayor experiencia en desarrollo frontend. No poseo
-            mucha experiencia en proyectos reales pero me gusta aspirar a poder
-            trabajar en proyectos desafiantes. Con muchas ganas de seguir
-            aprendiendo.
+            ...con preferencia y mayor experiencia en desarrollo frontend.
+            <br />
+            No poseo mucha experiencia en proyectos reales pero me gusta aspirar
+            a poder trabajar en proyectos desafiantes. <br />
+            Me gusta ser detallista y brindar soluciones de calidad.
           </Description>
           <Socials />
           <Buttons>

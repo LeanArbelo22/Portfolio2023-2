@@ -95,7 +95,7 @@ export const projects = [
     category: 'Full Stack',
     title: 'Smart Effortless Filter',
     description:
-      'Aplicación de escritorio para empresas, se encarga de gestionar ventas y conversaciones de WhatsApp de vendedores, además de un bot que automatiza las respuestas y filtra clientes. Por cuestiones legales no puedo mostrar el codigo.',
+      'Aplicación de escritorio para empresas, para gestionar ventas y conversaciones de WhatsApp de vendedores, además un bot que automatiza las respuestas y filtra clientes. Por cuestiones legales no puedo mostrar el codigo.',
     href: ''
   },
   {
@@ -134,7 +134,7 @@ export const projects = [
   {
     id: 8,
     img: projectEight,
-    category: 'Full Stack',
+    category: 'React',
     title: 'Digitall-E Ecommerce',
     description: 'Modelo de E-commerce para tienda de tecnologia.',
     href: 'https://digitall-e-a5kp.vercel.app/'
@@ -172,7 +172,7 @@ export const curriculum = [
     subtitle: 'Diplomatura en Desarrollo Web Full Stack',
     date: '04/2021 - 12/2021',
     description:
-      'Curso dividido en Frontend y Full Stack: JavaScript, HTML, Css, Bootstrap, MySQL, MongoDB, Node.js + Express',
+      'JavaScript, HTML, Css, Bootstrap, MySQL, MongoDB, Node.js + Express',
     category: 'educacion'
   },
   {
@@ -190,7 +190,7 @@ export const curriculum = [
     subtitle: 'Tecnicatura en Desarrollo de Software',
     date: '08/2022 - Actualidad',
     description:
-      'Esta previso aprender: Java, .NET, PHP, C#, MySQL, SQL Server, POO, Linux, Android, entre otros.',
+      'Java, .NET, PHP, C#, MySQL, SQL Server, POO, Linux, Android, entre otros.',
     category: 'educacion'
   },
   {
@@ -199,7 +199,7 @@ export const curriculum = [
     subtitle: 'Desarrollador Full Stack',
     date: '09/2022 - 01/2023',
     description:
-      'Mi unico trabajo formal, en el que comence trabajando como Desarrollador Frontend, para luego intervenir en el Backend y reconvertirlo, refactorizarlo y darle muchas mas funcionalidades. Desarrollamos una aplicación de escritorio dirigida a empresas, que se encarga de gestionar las ventas y conversaciones de las cuentas de WhatsApp de los vendedores, además de un bot que automatiza las respuestas y filtra los potenciales clientes de los que solo quieren consultar. Trabajamos con React, Electron, Node.js, PostgreSQL, Socket.io y Docker.',
+      'Mi unico trabajo formal, comence trabajando como Desarrollador Frontend, para luego desempeñarme como Full Stack. Desarrollamos una aplicación de escritorio dirigida a empresas, para gestionar ventas y conversaciones de las cuentas de WhatsApp de los vendedores, además de un bot que automatiza las respuestas y filtra los potenciales clientes. Trabajamos con React, Electron, Node.js, PostgreSQL, Socket.io y Docker.',
     category: 'trabajo'
   }
 ];
