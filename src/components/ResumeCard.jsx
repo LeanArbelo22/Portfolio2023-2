@@ -71,6 +71,7 @@ const DateTitle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 
   ${large({
     flexWrap: 'wrap'
@@ -83,7 +84,8 @@ const Subtitle = styled.h3`
   font-weight: 700;
 
   ${mobile({
-    fontSize: 'var(--larger)'
+    fontSize: 'var(--larger)',
+    whiteSpace: 'nowrap'
   })}
 `;
 
