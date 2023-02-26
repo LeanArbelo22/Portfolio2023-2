@@ -112,7 +112,7 @@ const Description = styled.p`
   })}
 
   ${mobile({
-    fontSize: 'var(--normal)'
+    fontSize: '0.94rem'
   })}
 
   ${smallMobile({
@@ -208,12 +208,12 @@ const Home = () => {
           <Description>
             ...con preferencia y mayor experiencia en desarrollo frontend.
             <br />
-            Soy un programador altamente motivado y apasionado por lo que hago. Con capacidad para aprender rápidamente nuevas
+            Soy un programador motivado y apasionado por lo que hago. Con capacidad para aprender rápidamente nuevas
             tecnologías y habilidades, me destaco por mi
-            atención al detalle y mi enfoque a la calidad en todas las
+            atención al detalle y enfoque a la calidad en todas las
             soluciones que desarrollo. Estoy seguro de que mi compromiso
             y habilidades me permitirán ser un miembro valioso de cualquier
-            equipo de programación.
+            equipo.
             <br />
           </Description>
           <Socials />
