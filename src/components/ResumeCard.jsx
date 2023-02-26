@@ -84,8 +84,7 @@ const Subtitle = styled.h3`
   font-weight: 700;
 
   ${mobile({
-    fontSize: 'var(--larger)',
-    whiteSpace: 'nowrap'
+    fontSize: '1.12rem'
   })}
 `;
 
@@ -95,6 +94,10 @@ const Date = styled.span`
   ${large({
     margin: '1rem 0'
   })}
+
+  ${mobile({
+    fontSize: '0.8rem'
+  })}
 `;
 
 const Description = styled.p`
@@ -103,10 +106,6 @@ const Description = styled.p`
 
   ${large({
     fontSize: 'var(--small)'
-  })}
-
-  ${mobile({
-    display: 'none'
   })}
 `;
 
