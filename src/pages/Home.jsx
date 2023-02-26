@@ -208,9 +208,13 @@ const Home = () => {
           <Description>
             ...con preferencia y mayor experiencia en desarrollo frontend.
             <br />
-            No poseo mucha experiencia en proyectos reales pero me gusta aspirar
-            a poder trabajar en proyectos desafiantes. <br />
-            Me gusta ser detallista y brindar soluciones de calidad.
+            Soy un programador altamente motivado y apasionado por lo que hago. Con capacidad para aprender rápidamente nuevas
+            tecnologías y habilidades, me destaco por mi
+            atención al detalle y mi compromiso con la calidad en todas las
+            soluciones que desarrollo. Estoy seguro de que mi compromiso
+            y habilidades me permitirán ser un miembro valioso de cualquier
+            equipo de programación.
+            <br />
           </Description>
           <Socials />
           <Buttons>
