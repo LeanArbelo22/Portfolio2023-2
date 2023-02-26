@@ -81,6 +81,10 @@ const Subtitle = styled.h3`
   font-family: var(--font2);
   font-size: var(--h5);
   font-weight: 700;
+
+  ${mobile({
+    fontSize: 'var(--larger)'
+  })}
 `;
 
 const Date = styled.span`
