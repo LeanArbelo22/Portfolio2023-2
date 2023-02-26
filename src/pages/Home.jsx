@@ -210,7 +210,7 @@ const Home = () => {
             <br />
             Soy un programador altamente motivado y apasionado por lo que hago. Con capacidad para aprender rápidamente nuevas
             tecnologías y habilidades, me destaco por mi
-            atención al detalle y mi compromiso con la calidad en todas las
+            atención al detalle y mi enfoque a la calidad en todas las
             soluciones que desarrollo. Estoy seguro de que mi compromiso
             y habilidades me permitirán ser un miembro valioso de cualquier
             equipo de programación.
