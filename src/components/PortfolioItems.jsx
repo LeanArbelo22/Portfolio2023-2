@@ -82,7 +82,7 @@ const PortfolioItems = ({ projects }) => {
             <Category className="text-cs">{category}</Category>
             <Title>{title}</Title>
             <Description>{description}</Description>
-            <Link href={href} className="links" target={href !== '' && '_blank'}>
+            <Link href={href} className="links" target={href !== '' ? '_blank' : '_self'}>
               Ver más
               <FaArrowRight className="icon" />
             </Link>

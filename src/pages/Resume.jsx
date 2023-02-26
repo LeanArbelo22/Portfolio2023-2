@@ -39,8 +39,8 @@ const ResumeContent = styled.div`
   grid-template-columns: repeat(2, 1fr);
 
   ${mobile({
-    gridTemplateColumns: 'repeat(1, 1fr)',
-    gridTemplateRows: 'repeat(2, 1fr)',
+    display: 'flex',
+    flexDirection: 'column'
   })}
 `;
 
