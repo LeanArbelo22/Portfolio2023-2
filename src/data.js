@@ -9,6 +9,8 @@ import projectEight from './assets/project8.png';
 import projectNine from './assets/project9.png';
 import projectTen from './assets/project10.webp';
 import projectEleven from './assets/project11.png';
+import projectTwelve from './assets/project12.png';
+import projectThird from './assets/project13.png';
 
 export const skills = [
   {
@@ -28,8 +30,7 @@ export const skills = [
     id: 3,
     name: 'Next.js',
     percentage: 65,
-    description:
-      'Lo estoy aprendiendo actualmente y me encanta.'
+    description: 'Lo estoy aprendiendo actualmente y me encanta.'
   },
   {
     id: 4,
@@ -77,11 +78,28 @@ export const projects = [
     img: projectOne,
     category: 'React',
     title: 'ESDev',
-    description: 'Landing page esdev-arg.com.',
-    href: 'https://esdev-arg.com/'
+    description: 'Landing page esdev-arg.com (dada de baja)',
+    href: 'https://esdev-7irx5lsn4-leanarbelo22.vercel.app/'
   },
   {
     id: 2,
+    img: projectTwelve,
+    category: 'React',
+    title: 'Salsacate',
+    description: 'Pagina para la secretaria de turismo de salsacate',
+    href: 'https://secretaria-turismo-salsacate.vercel.app/'
+  },
+  {
+    id: 3,
+    img: projectThird,
+    category: 'React',
+    title: 'Buscador',
+    description:
+      'Desafio React para proceso de seleccion. Utilizando Next.js y Redux.',
+    href: 'https://buscador-dun.vercel.app/'
+  },
+  {
+    id: 4,
     img: projectTwo,
     category: 'Python',
     title: 'GOSH!',
@@ -90,16 +108,16 @@ export const projects = [
     href: 'https://github.com/LeanArbelo22/GOSH-Proyecto-CodigoFacilito'
   },
   {
-    id: 3,
+    id: 5,
     img: projectThree,
     category: 'Full Stack',
     title: 'Smart Effortless Filter',
     description:
-      'Aplicación de escritorio para empresas, para gestionar ventas y conversaciones de WhatsApp de vendedores, además un bot que automatiza las respuestas y filtra clientes. Por cuestiones legales no puedo mostrar el codigo.',
-    href: ''
+      'Aplicación de escritorio para empresas, para gestionar ventas y conversaciones de WhatsApp de vendedores, además un bot que automatiza las respuestas y filtra clientes. El deploy es privado.',
+    href: 'https://github.com/matiml/SEF-frontend/tree/pruebas_lean'
   },
   {
-    id: 4,
+    id: 6,
     img: projectFour,
     category: 'React',
     title: 'Cinematics',
@@ -107,7 +125,7 @@ export const projects = [
     href: 'https://desafio-react-movies.vercel.app/'
   },
   {
-    id: 5,
+    id: 7,
     img: projectFive,
     category: 'JavaScript',
     title: 'Vanilla JS Course',
@@ -115,7 +133,7 @@ export const projects = [
     href: 'https://leanarbelo22.github.io/VanillaJS30/'
   },
   {
-    id: 6,
+    id: 8,
     img: projectSix,
     category: 'JavaScript',
     title: 'Instagram Card',
@@ -123,7 +141,7 @@ export const projects = [
     href: 'https://frontend-test-larbelo.surge.sh/'
   },
   {
-    id: 7,
+    id: 9,
     img: projectSeven,
     category: 'JavaScript',
     title: 'Gestion de notas',
@@ -132,7 +150,7 @@ export const projects = [
     href: 'https://leanarbelo22.github.io/gestion-notas-alumnos/'
   },
   {
-    id: 8,
+    id: 10,
     img: projectEight,
     category: 'React',
     title: 'Digitall-E Ecommerce',
@@ -140,7 +158,7 @@ export const projects = [
     href: 'https://digitall-e-a5kp.vercel.app/'
   },
   {
-    id: 9,
+    id: 11,
     img: projectNine,
     category: 'Full Stack',
     title: 'Frog Maxishop',
@@ -148,7 +166,7 @@ export const projects = [
     href: 'https://frog-react.vercel.app/'
   },
   {
-    id: 10,
+    id: 12,
     img: projectTen,
     category: 'JavaScript',
     title: 'Bot Telegram',
@@ -156,7 +174,7 @@ export const projects = [
     href: 'https://github.com/LeanArbelo22/TelegramBot'
   },
   {
-    id: 11,
+    id: 13,
     img: projectEleven,
     category: 'React',
     title: 'Portafolio',
@@ -168,11 +186,11 @@ export const projects = [
 export const curriculum = [
   {
     id: 1,
-    title: 'UTN.BA',
-    subtitle: 'Diplomatura en Desarrollo Web Full Stack',
-    date: '04/2021 - 12/2021',
+    title: 'Instituto Santo Domingo',
+    subtitle: 'Tecnicatura en Desarrollo de Software',
+    date: '08/2022 - Actualidad',
     description:
-      'JavaScript, HTML, Css, Bootstrap, MySQL, MongoDB, Node.js + Express',
+      'Java, MySQL, SQL Server, POO, Linux, Android, Python, JavaScrip, etc.',
     category: 'educacion'
   },
   {
@@ -186,11 +204,11 @@ export const curriculum = [
   },
   {
     id: 3,
-    title: 'Instituto Santo Domingo',
-    subtitle: 'Tecnicatura en Desarrollo de Software',
-    date: '08/2022 - Actualidad',
+    title: 'UTN.BA',
+    subtitle: 'Diplomatura en Desarrollo Web Full Stack',
+    date: '04/2021 - 12/2021',
     description:
-      'Java, .NET, PHP, C#, MySQL, SQL Server, POO, Linux, Android, entre otros.',
+      'JavaScript, HTML, Css, Bootstrap, MySQL, MongoDB, Node.js + Express',
     category: 'educacion'
   },
   {
@@ -199,7 +217,31 @@ export const curriculum = [
     subtitle: 'Desarrollador Full Stack',
     date: '09/2022 - 01/2023',
     description:
-      'Mi unico trabajo formal, comence trabajando como Desarrollador Frontend, para luego desempeñarme como Full Stack. Desarrollamos una aplicación de escritorio dirigida a empresas, para gestionar ventas y conversaciones de las cuentas de WhatsApp de los vendedores, además de un bot que automatiza las respuestas y filtra los potenciales clientes. Trabajamos con React, Electron, Node.js, PostgreSQL, Socket.io y Docker.',
+      'Comence trabajando como Desarrollador Frontend, para luego desempeñarme como Full Stack. Desarrollamos una aplicación de escritorio dirigida a empresas, para gestionar ventas y conversaciones de las cuentas de WhatsApp de los vendedores, además de un bot que automatiza las respuestas y filtra los potenciales clientes. Trabajamos con React, Electron, Node.js, PostgreSQL, Socket.io y Docker.',
+    category: 'trabajo'
+  },
+  {
+    id: 5,
+    title: 'Telemercado - Banco de Córdoba',
+    subtitle: 'Representante de Atención al Cliente',
+    date: '10/2023 - Actualidad',
+    description: 'Córdoba - Argentina',
+    category: 'trabajo'
+  },
+  {
+    id: 6,
+    title: 'Frog Maxishop',
+    subtitle: 'Cajero Especializado',
+    date: '05/2019 - 06/2022',
+    description: 'Montevideo - Uruguay',
+    category: 'trabajo'
+  },
+  {
+    id: 7,
+    title: 'Clinica Chutro',
+    subtitle: 'Secretario Administrativo',
+    date: '05/2017 - 04/2018',
+    description: 'Córdoba - Argentina',
     category: 'trabajo'
   }
 ];

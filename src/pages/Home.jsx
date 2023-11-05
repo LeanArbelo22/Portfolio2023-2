@@ -208,19 +208,19 @@ const Home = () => {
           <Description>
             ...con preferencia y mayor experiencia en desarrollo frontend.
             <br />
-            Soy un programador motivado y apasionado por lo que hago. Con capacidad para aprender rápidamente nuevas
-            tecnologías y habilidades, me destaco por mi
-            atención al detalle y enfoque a la calidad en todas las
-            soluciones que desarrollo. Estoy seguro de que mi compromiso
-            y habilidades me permitirán ser un miembro valioso de cualquier
-            equipo.
+            Soy un programador motivado y apasionado por lo que hago. Con
+            capacidad para aprender rápidamente nuevas tecnologías y
+            habilidades, me destaco por mi atención al detalle y enfoque a la
+            calidad en todas las soluciones que desarrollo. Estoy seguro de que
+            mi compromiso y habilidades me permitirán ser un miembro valioso de
+            cualquier equipo.
             <br />
           </Description>
           <Socials />
           <Buttons>
             <Button
               download
-              href="/CV-2023-ESP-LeandroArbelo.pdf"
+              href="/CV-LeandroArbelo-IT.pdf"
               alt="CV"
               target="_blank"
               rel="noopener noreferrer"
